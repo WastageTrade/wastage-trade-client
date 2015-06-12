@@ -1,0 +1,27 @@
+{
+  "name": "wastage-trade-client",
+  "version": "0.0.1",
+  "homepage": "https://github.com/wenderjean/wastage-trade-client",
+  "authors": [
+    "Wender Freese <wender.jean@gmail.com>",
+    "Eder Roger <eder.roger.souza@gmail.com>"
+  ],
+  "description": "An app that connect people who wanna share solid waste.",
+  "main": "index.html",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "waste",
+    "wastage",
+    "trade",
+    "market",
+    "share",
+    "people"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "react": "~0.13.3",
+    "foundation": "~5.5.2"
+  }
+}
