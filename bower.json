@@ -21,7 +21,6 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "react": "~0.13.3",
     "foundation": "~5.5.2"
   }
 }
