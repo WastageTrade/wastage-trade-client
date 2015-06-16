@@ -1,14 +1,36 @@
 var gulp        = require('gulp');
-var browserSync = require('browser-sync').create();
+var source      = require('vinyl-source-stream');
+var browserify  = require('browserify');
+var watchify    = require('watchify');
+var reactify    = require('reactify');
+var del         = require('del');
 
-gulp.task('sync', function() {
-  browserSync.init({
-    server: {
-      baseDir: "./"
-    }
-  });
+var ENV = 'DEVELOPMENT';
 
-  process.on('exit', browserSync.exit);
+gulp.task('clean', function() {
+  del(['build']);
 });
 
-gulp.task('default', ['sync']);
+gulp.task('browserify', ['clean'], function() {
+  var bundler = browserify({
+    entries: ['./app/main.js'],
+    transform: [reactify],
+    debug: true,
+    cache: {}, packageCache: {}, fullPaths: true
+  });
+
+  var watcher  = watchify(bundler);
+
+  return watcher
+    .on('update', function () {
+      watcher
+        .bundle()
+        .pipe(source('main.js'))
+        .pipe(gulp.dest('./build/'));
+    })
+    .bundle()
+    .pipe(source('main.js'))
+    .pipe(gulp.dest('./build/'));
+});
+
+gulp.task('default', ['browserify']);
