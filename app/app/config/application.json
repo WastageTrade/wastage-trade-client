@@ -1,0 +1,9 @@
+{
+  "title": "Wastage Trade",
+  "template": {
+    "shared": {
+      "header": "./app/templates/shared/_header.html",
+      "footer": "./app/templates/shared/_footer.html"
+    }
+  }
+}
