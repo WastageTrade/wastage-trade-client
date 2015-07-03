@@ -5,14 +5,18 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="./app/assets/css/layout.css" rel="stylesheet" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
+    <link href="styles/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/application.css" rel="stylesheet" type="text/css" />
 
   </head>
   <body ng-controller="SiteCtrl">
 
-    <div ng-include src="template.shared.header"></div>
+    <header ng-include src="template.shared.header"></header>
+    <main>
+      <div class="bg-home"></div>
+    </main>
 
-    <script src="../build/build.js" charset="UTF-8"></script>
+    <script src="scripts/build.js" charset="UTF-8"></script>
   </body>
 </html>

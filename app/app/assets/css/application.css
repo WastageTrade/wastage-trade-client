@@ -1,0 +1,32 @@
+body {
+  background-color: #F1EEEC !important;
+}
+
+.navbar {
+  background-color: #33B4AA !important;
+  box-shadow: 1px 1px 10px #000;
+  border: none;
+}
+
+.navbar .container .navbar-header {
+  padding: 10px !important;
+}
+
+.navbar .container .navbar-header .navbar-brand {
+  font-family: 'Fredoka One', cursive;
+  font-size: 18px !important;
+  color: #FFF !important;
+  float: left;
+  line-height: 0;
+  height: 0;
+  text-transform: uppercase;
+}
+
+.bg-home {
+  background: url('/assets/images/bg-home.jpg') center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 706px;
+}

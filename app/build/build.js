@@ -28,7 +28,11 @@ module.exports = function () {
 
 },{"./controllers/site-ctrl":4}],4:[function(require,module,exports){
 var SiteCtrl = function ($rootScope) {
-  $rootScope.template = require('../../config/application.json').template;
+  // $rootScope.template = require('../../config/application.json').template;
+
+  angular.extend($rootScope, require('../../config/application.json'));
+
+  console.log($rootScope);
 };
 
 module.exports = ['$rootScope', SiteCtrl];

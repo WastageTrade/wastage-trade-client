@@ -1,5 +1,5 @@
 var SiteCtrl = function ($rootScope) {
-  $rootScope.template = require('../../config/application.json').template;
+  angular.extend($rootScope, require('../../config/application.json'));
 };
 
 module.exports = ['$rootScope', SiteCtrl];
