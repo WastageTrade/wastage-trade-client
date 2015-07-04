@@ -26,12 +26,6 @@ body {
   text-transform: uppercase;
 }
 
-footer {
-  background-color: #33B4AA !important;
-  color: #FFF !important;
-  padding: 10px;
-}
-
 .bg-home {
   background: url('/assets/images/bg-home.jpg') center top;
   -webkit-background-size: cover;
@@ -50,7 +44,12 @@ footer {
   padding: 10px;
 }
 
-.container .box {
+.content {
+  padding-top: 120px;
+  text-align: center;
+}
+
+.content .box {
   margin: 5px 45px;
   padding: 10px 5px;
   max-height: 400px;
@@ -58,27 +57,4 @@ footer {
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   border-radius: 25px;
-}
-
-hr.separator {
-  margin: 60px 0px 30px 0px;
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0));
-}
-
-.separator-title {
-  margin: -55px auto 0 auto;
-  padding: 10px;
-  background-color: #F1EEEC;
-  max-width: 200px;
-  color: #666;
-  font-size: 1.5em;
-  text-align: center;
-}
-
-.form-sign-up {
-  max-width: 400px;
-  padding: 15px;
-  margin: 0 auto;
 }
