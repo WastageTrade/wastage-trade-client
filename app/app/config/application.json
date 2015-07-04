@@ -1,5 +1,6 @@
 {
   "title": "Wastage Trade",
+  "locale": "pt-br",
   "template": {
     "shared": {
       "header": "./app/templates/shared/_header.html",

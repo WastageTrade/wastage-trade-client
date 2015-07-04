@@ -8,6 +8,10 @@ body {
   border: none;
 }
 
+.navbar ul li a {
+  color: #FFF !important;
+}
+
 .navbar .container .navbar-header {
   padding: 10px !important;
 }
@@ -29,4 +33,28 @@ body {
   -o-background-size: cover;
   background-size: cover;
   min-height: 706px;
+}
+
+.bt-default {
+  padding: 6px 18px;
+  line-height: 14px;
+}
+
+.tt {
+  padding: 10px;
+}
+
+.content {
+  padding-top: 120px;
+  text-align: center;
+}
+
+.content .box {
+  margin: 5px 45px;
+  padding: 10px 5px;
+  max-height: 400px;
+  background: #FFF;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
 }
