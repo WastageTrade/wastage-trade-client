@@ -45,7 +45,7 @@ module.exports = function () {
 },{}],4:[function(require,module,exports){
 module.exports = function () {
     angular.module('app.controllers', [])
-        .controller('SiteCtrl', require('./controllers/site-ctrl'));
+      .controller('SiteCtrl', require('./controllers/site-ctrl'));
 };
 
 },{"./controllers/site-ctrl":5}],5:[function(require,module,exports){
@@ -63,6 +63,34 @@ var SiteCtrl = function ($rootScope) {
 module.exports = ['$rootScope', SiteCtrl];
 
 },{"../../config/application.json":1,"../../config/locale/pt-br.json":2}],6:[function(require,module,exports){
+<<<<<<< HEAD:app/build/build.js
+=======
+module.exports = function () {
+  angular.module('app.routes', ['ngRoute']).config(['$routeProvider', function ($routeProvider) {
+    $routeProvider
+      .when('/', require('./routes/index').home)
+      .when('/permission-denied', require('./routes/index').permission_denied)
+      .when('/page-not-found', require('./routes/index').not_found)
+      .otherwise({redirectTo: '/page-not-found'});
+  }]);
+};
+
+},{"./routes/index":7}],7:[function(require,module,exports){
+exports.home = {
+  templateUrl: '/templates/layout/_body.html'
+};
+
+exports.permission_denied = {
+    templateUrl: 'permission-denied.html'
+};
+
+exports.not_found = {
+  controller: 'SiteCtrl',
+  templateUrl: '404.html'
+};
+
+},{}],8:[function(require,module,exports){
+>>>>>>> 035590dd6bf1929130fbe6a31c21b22b0c2428e4:app/build/wastt.js
 require('angular');
 $ = jQuery = require('../bower_components/jquery/dist/jquery.min.js');
 require('../bower_components/bootstrap/dist/js/bootstrap.min.js');

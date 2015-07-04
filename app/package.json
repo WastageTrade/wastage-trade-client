@@ -9,7 +9,16 @@
   "author": "Wender Freese",
   "license": "ISC",
   "devDependencies": {
+<<<<<<< HEAD
     "browserify": "^10.2.4"
+=======
+    "browser-sync": "^2.7.13",
+    "browserify": "^10.2.4",
+    "gulp": "^3.9.0",
+    "gulp-jshint": "^1.11.2",
+    "jshint-stylish": "^2.0.1",
+    "vinyl-source-stream": "^1.1.0"
+>>>>>>> 035590dd6bf1929130fbe6a31c21b22b0c2428e4
   },
   "dependencies": {
     "angular": "^1.4.1"
