@@ -1,8 +1,17 @@
 var gulp = require('gulp');
 
-require('./tasks/build');
-require('./tasks/clean');
-require('./tasks/watch');
-require('./tasks/webserver');
+sources = {
+  "css": "app/assets/css/**/*.css",
+  "js": "app/vendor/**/*.js",
+  "html": "app/**/*.html"
+};
 
-gulp.task('default', ['clean', 'build', 'watch']);
+dest = {
+  "css": "dist/assets/css/",
+  "js": "dist/vendor/",
+  "html": "dist/"
+}
+
+require('./tasks/sync');
+
+gulp.task('default', ['browser-sync']);

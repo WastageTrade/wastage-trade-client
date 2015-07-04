@@ -1,8 +1,13 @@
 {
   "menu": [
     {
-      "href": "#home",
+      "href": "#/",
       "label": "Início",
+      "title": ""
+    },
+    {
+      "href": "#sign_up",
+      "label": "Faça Parte",
       "title": ""
     },
     {
@@ -15,5 +20,10 @@
       "label": "Blog",
       "title": ""
     }
-  ]
+  ],
+  "server": {
+    "error": {
+      "404": "Desculpe, nós não encontramos o conteúdo que você procura."
+    }
+  }
 }
