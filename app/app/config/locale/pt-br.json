@@ -1,0 +1,19 @@
+{
+  "menu": [
+    {
+      "href": "#home",
+      "label": "Início",
+      "title": ""
+    },
+    {
+      "href": "#how_it_works",
+      "label": "Como Funciona",
+      "title": ""
+    },
+    {
+      "href": "#blog",
+      "label": "Blog",
+      "title": ""
+    }
+  ]
+}

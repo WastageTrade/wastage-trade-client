@@ -1,5 +1,12 @@
+'use strict';
+
 var SiteCtrl = function ($rootScope) {
-  $rootScope.template = require('../../config/application.json').template;
+  const config = require('../../config/application.json');
+  const teste = '../../config/locale/' + config.locale + '.json';
+  const locale = require('../../config/locale/pt-br.json');
+
+  angular.extend($rootScope, config);
+  angular.extend($rootScope, locale);
 };
 
 module.exports = ['$rootScope', SiteCtrl];
