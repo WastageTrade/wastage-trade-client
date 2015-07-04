@@ -1,9 +1,9 @@
-var gulp = require('gulp');
-var browserSync = require('browser-sync').create();
+var gulp = require("gulp");
+var browserSync = require("browser-sync").create();
 
-require('./compile');
+require("./compile");
 
-gulp.task('browser-sync', ['browserify'], function() {
+gulp.task("browser-sync", ["browserify"], function() {
   browserSync.init({
     server: {
       baseDir: "./app/",
@@ -15,6 +15,6 @@ gulp.task('browser-sync', ['browserify'], function() {
     }
   });
 
-  gulp.watch("./app/assets/**/*.css").on('change', browserSync.reload);
-  gulp.watch("./app/*.html").on('change', browserSync.reload);
+  gulp.watch("./app/assets/**/*.css").on("change", browserSync.reload);
+  gulp.watch("./app/*.html").on("change", browserSync.reload);
 });

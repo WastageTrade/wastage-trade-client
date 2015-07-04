@@ -56,7 +56,7 @@ module.exports = function () {
 },{}],4:[function(require,module,exports){
 module.exports = function () {
     angular.module('app.controllers', [])
-        .controller('SiteCtrl', require('./controllers/site-ctrl'));
+      .controller('SiteCtrl', require('./controllers/site-ctrl'));
 };
 
 },{"./controllers/site-ctrl":5}],5:[function(require,module,exports){
@@ -93,7 +93,7 @@ exports.permission_denied = {
 };
 
 exports.not_found = {
-  controller: "SiteCtrl",
+  controller: 'SiteCtrl',
   templateUrl: '404.html'
 };
 

@@ -7,6 +7,6 @@ exports.permission_denied = {
 };
 
 exports.not_found = {
-  controller: "SiteCtrl",
+  controller: 'SiteCtrl',
   templateUrl: '404.html'
 };

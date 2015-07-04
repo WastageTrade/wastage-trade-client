@@ -2,7 +2,9 @@ var gulp = require('gulp');
 var browserify = require('browserify');
 var source = require('vinyl-source-stream');
 
-gulp.task('browserify', function() {
+require("./lint");
+
+gulp.task('browserify', ['lint'], function() {
   return browserify('./app/wastt.js')
     .bundle()
     .pipe(source('wastt.js'))
