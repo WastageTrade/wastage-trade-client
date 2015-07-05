@@ -9,7 +9,7 @@
 /node_modules
 
 # Ignore build
-/build
+/app/build
 
 # Ignore vagrant
 /.vagrant
