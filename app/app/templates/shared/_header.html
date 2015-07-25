@@ -1,17 +1,17 @@
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">{{ title }}</a>
+      <a class="navbar-brand" href="#/">{{ title }}</a>
     </div>
 
     <div id="navbar">
       <ul class="nav navbar-nav">
         <li ng-repeat="item in menu">
-          <a href="{{ item.href }}" title="{{ item.title }}">{{ item.label }}</a>
+          <a href="{{ item.href }}" title="{{ item.title }}" ng-click="goToAnchor(this);">{{ item.label }}</a>
         </li>
       </ul>
 
-      <div class="nav navbar-nav navbar-right tt">
+      <div class="nav navbar-nav navbar-right padding-top-ten">
         <a href="../navbar/" class="btn bt-default btn-default">Login</a>
       </div>
     </div>
