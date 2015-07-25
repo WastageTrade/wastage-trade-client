@@ -1,2 +1,8 @@
-<h1>{ 404 }</h1>
-{{ server.error['404'] }}
+<div class="padding-top-hundred">
+  <div class="row">
+    <div class="container text-center">
+      <h1>{ {{ server.error.page_not_found.key }} }</h1>
+      {{ server.error.page_not_found.value }}
+    </div>
+  </div>
+</div>

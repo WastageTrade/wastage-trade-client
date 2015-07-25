@@ -2,6 +2,11 @@
   "title": "Wastage Trade",
   "locale": "pt-br",
   "template": {
+    "index": {
+      "panel": "./app/templates/index/panel.html",
+      "sign_up": "./app/templates/index/sign_up.html",
+      "blog": "./app/templates/index/blog.html"
+    },
     "shared": {
       "header": "./app/templates/shared/_header.html",
       "footer": "./app/templates/shared/_footer.html"

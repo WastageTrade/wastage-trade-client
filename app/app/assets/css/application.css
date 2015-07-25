@@ -46,10 +46,13 @@ footer {
   line-height: 14px;
 }
 
-.tt {
+.padding-top-ten {
   padding: 10px;
 }
 
+.padding-top-hundred {
+  padding: 100px;
+}
 .container .box {
   margin: 5px 45px;
   padding: 10px 5px;
